@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('fonts/anton-regular/anton-regular-webfont.woff2'),
+        url('fonts/anton-regular/anton-regular-webfont.woff');
+}
+
+@font-face {
+    font-family: 'Anonymouspro';
+    src: url('fonts/anonymouspro-regular/anonymouspro-regular-webfont.woff2'),
+        url('fonts/anonymouspro-regular/anonymouspro-regular-webfont.woff');
+}
+
+@font-face {
+    font-family: 'Dela';
+    src: url('fonts/Dela-regular/DelaGothicOne-Regular.ttf');
+}
+
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    gap: 200px;
+}
+
+main .linea-vertical{
+    background-color: #5CE1E6;
+    width: 100px;
+}
+
+main .contenedor-cantante{
+    display: flex;
+    background-color: #5CE1E6;
+    height: 100vh;
+    width: 100%;
+}
+
+.contenedor-cantante .cantante-1,
+.contenedor-cantante .cantante-2{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.contenedor-cantante .cantante-1 img,
+.contenedor-cantante .cantante-2 img{
+    width: 100%;
+    height: 50%;
+}
+
+.cantante-1 .informacion-1,
+.cantante-2 .titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cantante-1 .informacion-1 span,
+.cantante-1 .informacion-2 span{
+    display: block;
+}
+
+.cantante-1 .informacion-1 span{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Anonymouspro';
+    font-weight: bold;
+}
+
+.cantante-1 .informacion-2{
+    margin-top: 20px;
+}
+
+.cantante-1 .informacion-2 span{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.cantante-1 .informacion-2 a{
+   text-decoration: none;
+   color: #000000;
+   font-weight: 100;
+}
+
+.cantante-2 .titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cantante-2 .titulo h1,
+.cantante-2 .titulo span{
+    font-family: 'Anton';
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.cantante-2 .titulo span{
+    font-weight: bold;
+}
+
+.cantante-2::before{
+    position: absolute;
+    bottom: 60px;
+    right: 119px;
+    content: 'MÚSICA';
+    color: #ffffff;
+    font-family: 'Anton';
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.cantante-2::after{
+    position: absolute;
+    bottom: 30px;
+    right: 130px;
+    content: 'CLUB';
+    color: #ffffff;
+    font-family: 'Anton';
+    font-size: 25px;
+    letter-spacing: 1px;
+}
